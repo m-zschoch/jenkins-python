@@ -1,0 +1,9 @@
+pipeline {
+    agent any
+
+    stages {
+        steps("Run script") {
+            sh "python3 hello-world.py"
+        }
+    }
+}
